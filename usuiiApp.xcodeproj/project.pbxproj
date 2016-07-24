@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8216891B1D3B3A0200D3AF6C /* MorningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8216891A1D3B3A0200D3AF6C /* MorningViewController.swift */; };
+		8216891D1D3B418300D3AF6C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8216891C1D3B418300D3AF6C /* LoginViewController.swift */; };
+		8216891F1D3B506600D3AF6C /* NightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8216891E1D3B506600D3AF6C /* NightViewController.swift */; };
 		82298FA01D37432D00222FFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82298F9F1D37432D00222FFC /* AppDelegate.swift */; };
 		82298FA21D37432D00222FFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82298FA11D37432D00222FFC /* ViewController.swift */; };
 		82298FA51D37432D00222FFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82298FA31D37432D00222FFC /* Main.storyboard */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8216891A1D3B3A0200D3AF6C /* MorningViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MorningViewController.swift; sourceTree = "<group>"; };
+		8216891C1D3B418300D3AF6C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8216891E1D3B506600D3AF6C /* NightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NightViewController.swift; sourceTree = "<group>"; };
 		82298F9C1D37432D00222FFC /* usuiiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = usuiiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82298F9F1D37432D00222FFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82298FA11D37432D00222FFC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +109,9 @@
 				82298FA61D37432D00222FFC /* Assets.xcassets */,
 				82298FA81D37432D00222FFC /* LaunchScreen.storyboard */,
 				82298FAB1D37432D00222FFC /* Info.plist */,
+				8216891A1D3B3A0200D3AF6C /* MorningViewController.swift */,
+				8216891E1D3B506600D3AF6C /* NightViewController.swift */,
+				8216891C1D3B418300D3AF6C /* LoginViewController.swift */,
 			);
 			path = usuiiApp;
 			sourceTree = "<group>";
@@ -193,6 +202,7 @@
 				TargetAttributes = {
 					82298F9B1D37432D00222FFC = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 5896XSFAG8;
 					};
 					82298FAF1D37432D00222FFC = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -256,7 +266,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8216891D1D3B418300D3AF6C /* LoginViewController.swift in Sources */,
 				82298FA21D37432D00222FFC /* ViewController.swift in Sources */,
+				8216891B1D3B3A0200D3AF6C /* MorningViewController.swift in Sources */,
+				8216891F1D3B506600D3AF6C /* NightViewController.swift in Sources */,
 				82298FA01D37432D00222FFC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,9 +412,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = usuiiApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jp.usuii.usuiiApp;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ac.keio.sfc.ht.lifecloud.test.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -410,9 +425,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = usuiiApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jp.usuii.usuiiApp;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ac.keio.sfc.ht.lifecloud.test.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -482,6 +499,7 @@
 				82298FC61D37432D00222FFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		82298FC71D37432D00222FFC /* Build configuration list for PBXNativeTarget "usuiiAppTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +508,7 @@
 				82298FC91D37432D00222FFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		82298FCA1D37432D00222FFC /* Build configuration list for PBXNativeTarget "usuiiAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +517,7 @@
 				82298FCC1D37432D00222FFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
