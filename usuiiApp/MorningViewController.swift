@@ -50,20 +50,16 @@ class MorningViewController: UIViewController {
         
         print(num)
         
-        let morning = ("fitbitid=\(fitbitid)&date=\(date)&time=morning&point=\(num).dataUsingEncoding").dataUsingEncoding(NSUTF8StringEncoding)!
+        let morning = "fitbitid=\(fitbitid!)&date=\(date)&time=morning&point=\(num)"
         print(morning)
         
         // HTTP通信
-        let url = NSURL(string:"http://133.27.171.211/~usuii/fitbit/moodData.php")
+        let url = NSURL(string:"http://133.27.171.211/~usuii/fitbit/moodData.php?" + morning)
         print(url)
         let request = NSMutableURLRequest(URL: url!)
         print(request)
         request.HTTPMethod = "GET"
-        request.HTTPBody = morning
-        
-        let data = try? NSURLConnection.sendSynchronousRequest(request, returningResponse: nil)
-        // let strData = NSString(data: data!, encoding: NSUTF8StringEncoding)
-        // print(strData)
+        _ = try? NSURLConnection.sendSynchronousRequest(request, returningResponse: nil)
         
         // 画面遷移
         let doneView: AnyObject = self.storyboard!.instantiateViewControllerWithIdentifier("done")
