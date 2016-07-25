@@ -60,8 +60,11 @@ class MorningViewController: UIViewController {
         let data = try? NSURLConnection.sendSynchronousRequest(request, returningResponse: nil)
         let strData = NSString(data: data!, encoding: NSUTF8StringEncoding)
         print(strData)
+        
+        //let nextView: AnyObject = self.storyboard!.instantiateViewControllerWithIdentifier("done")
+        //self.presentViewController(nextView as! UIViewController, animated: true, completion: nil)
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

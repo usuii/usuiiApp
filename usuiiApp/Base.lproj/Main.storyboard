@@ -87,7 +87,7 @@
                                     <color key="titleColor" red="0.90588235289999997" green="0.44873739419999997" blue="0.16798655100000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="J4W-ZJ-uL8" kind="modal" id="r3Y-0E-pHp"/>
+                                    <segue destination="J4W-ZJ-uL8" kind="modal" id="JHy-Qt-Uqd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -119,45 +119,30 @@
                                 <state key="normal" title=" 1">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="Ex9-XY-cW8" kind="modal" id="B1y-1I-ZOV"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m9r-fI-Xey">
                                 <rect key="frame" x="112" y="319" width="30" height="30"/>
                                 <state key="normal" title="2">
                                     <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="Ex9-XY-cW8" kind="modal" id="k1s-x0-b0Z"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LWv-3T-l49">
                                 <rect key="frame" x="172" y="319" width="30" height="30"/>
                                 <state key="normal" title="3">
                                     <color key="titleColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="Ex9-XY-cW8" kind="modal" id="hyZ-At-6g5"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1r8-yh-Jxa">
                                 <rect key="frame" x="232" y="319" width="30" height="30"/>
                                 <state key="normal" title="4">
                                     <color key="titleColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="Ex9-XY-cW8" kind="modal" id="EBl-1w-VXU"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPt-Gp-Rph">
                                 <rect key="frame" x="292" y="319" width="30" height="30"/>
                                 <state key="normal" title="5">
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="Ex9-XY-cW8" kind="modal" id="uYg-UJ-ymq"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(よかった)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQO-iY-Vx7">
                                 <rect key="frame" x="276" y="366" width="62" height="21"/>
@@ -205,10 +190,10 @@
             </objects>
             <point key="canvasLocation" x="610.5" y="-362.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Done View Controller-->
         <scene sceneID="KHY-dt-2PZ">
             <objects>
-                <viewController id="Ex9-XY-cW8" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="done" id="Ex9-XY-cW8" customClass="DoneViewController" customModule="usuiiApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OIq-Jn-ps8"/>
                         <viewControllerLayoutGuide type="bottom" id="7iP-fU-zi6"/>
@@ -265,45 +250,30 @@
                                 <state key="normal" title=" 1">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="Ex9-XY-cW8" kind="modal" id="V35-fa-OT5"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shr-MH-pow">
                                 <rect key="frame" x="112" y="319" width="30" height="30"/>
                                 <state key="normal" title="2">
                                     <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="Ex9-XY-cW8" kind="modal" id="ihS-Sr-bvM"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lav-gO-UnH">
                                 <rect key="frame" x="172" y="319" width="30" height="30"/>
                                 <state key="normal" title="3">
                                     <color key="titleColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="Ex9-XY-cW8" kind="modal" id="cdm-Z2-u4C"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kr-dz-EXr">
                                 <rect key="frame" x="232" y="319" width="30" height="30"/>
                                 <state key="normal" title="4">
                                     <color key="titleColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="Ex9-XY-cW8" kind="modal" id="LVY-hp-R4H"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnf-3s-gHa">
                                 <rect key="frame" x="292" y="319" width="30" height="30"/>
                                 <state key="normal" title="5">
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="Ex9-XY-cW8" kind="modal" id="MeU-fq-cGw"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="あてはまるものを選んでください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGf-zh-t06">
                                 <rect key="frame" x="60" y="208" width="255" height="21"/>
@@ -345,6 +315,5 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="WMg-Ci-uDS"/>
-        <segue reference="uYg-UJ-ymq"/>
     </inferredMetricsTieBreakers>
 </document>
