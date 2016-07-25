@@ -15,20 +15,28 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
     }
     
+    // テキストフィールドに名前
     @IBOutlet weak var textfield: UITextField!
     
     func login() {
-        let userDefaults = NSUserDefaults.standardUserDefaults()
+        // テキストフィールドからFitbitIDを取得
         let fitbitid = textfield.text
+        print("fitbitid")
+        let userDefaults = NSUserDefaults.standardUserDefaults()
         userDefaults.setObject(fitbitid, forKey: "fitbitid")
         userDefaults.synchronize()
+        
+        // 画面遷移
+        let storyboard: UIStoryboard = self.storyboard!
+        let homeView = storyboard.instantiateViewControllerWithIdentifier("home") as! ViewController
+        self.presentViewController(homeView, animated: true, completion: nil)
     }
     
-    // Do any additional setup after loading the view, typically from a nib.
     override func viewDidLoad() {
+        // Do any additional setup after loading the view, typically from a nib.
         super.viewDidLoad()
         textfield.delegate = self
-        }
+    }
     
     func textFieldShouldReturn(textfield: UITextField) -> Bool {
         textfield.resignFirstResponder()
@@ -36,18 +44,18 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        if(textfield.isFirstResponder()){
+        if(textfield.isFirstResponder()) {
             textfield.resignFirstResponder()
         }
     }
-    
+
     @IBAction func login(sender: AnyObject) {
         login()
     }
     
     override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        super.didReceiveMemoryWarning()
     }
     
 }

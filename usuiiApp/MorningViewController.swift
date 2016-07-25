@@ -38,7 +38,7 @@ class MorningViewController: UIViewController {
     
     func morning(num: Int) {
         let userDefaults = NSUserDefaults.standardUserDefaults()
-        let fitbitid = userDefaults.objectForKey("fitbitid")!
+        let fitbitid = userDefaults.objectForKey("fitbitid")
         print(fitbitid)
         
         let today = NSDate()
@@ -48,7 +48,10 @@ class MorningViewController: UIViewController {
         let date = format.stringFromDate(today)
         print(date)
         
+        print(num)
+        
         let morning = ("fitbitid=\(fitbitid)&date=\(date)&time=morning&point=\(num).dataUsingEncoding").dataUsingEncoding(NSUTF8StringEncoding)!
+        print(morning)
         
         let url = NSURL(string:"http://133.27.171.211/~usuii/fitbit/moodData.php")
         print(url)
@@ -58,11 +61,11 @@ class MorningViewController: UIViewController {
         request.HTTPBody = morning
         
         let data = try? NSURLConnection.sendSynchronousRequest(request, returningResponse: nil)
-        let strData = NSString(data: data!, encoding: NSUTF8StringEncoding)
-        print(strData)
+        // let strData = NSString(data: data!, encoding: NSUTF8StringEncoding)
+        // print(strData)
         
-        //let nextView: AnyObject = self.storyboard!.instantiateViewControllerWithIdentifier("done")
-        //self.presentViewController(nextView as! UIViewController, animated: true, completion: nil)
+        let doneView: AnyObject = self.storyboard!.instantiateViewControllerWithIdentifier("done")
+        self.presentViewController(doneView as! UIViewController, animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
