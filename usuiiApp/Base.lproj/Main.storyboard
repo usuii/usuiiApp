@@ -205,10 +205,10 @@
             </objects>
             <point key="canvasLocation" x="610.5" y="-362.5"/>
         </scene>
-        <!--Done View Controller-->
+        <!--View Controller-->
         <scene sceneID="KHY-dt-2PZ">
             <objects>
-                <viewController storyboardIdentifier="done" id="Ex9-XY-cW8" customClass="DoneViewController" customModule="usuiiApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="done" id="Ex9-XY-cW8" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OIq-Jn-ps8"/>
                         <viewControllerLayoutGuide type="bottom" id="7iP-fU-zi6"/>

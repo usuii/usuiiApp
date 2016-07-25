@@ -6,6 +6,8 @@
 //  Copyright © 2016年 usuii. All rights reserved.
 //
 
+// あとでMorningViewControllerを元に修正(なので動かない)
+
 import Foundation
 import UIKit
 

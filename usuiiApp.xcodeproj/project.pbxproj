@@ -17,7 +17,6 @@
 		82298FAA1D37432D00222FFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82298FA81D37432D00222FFC /* LaunchScreen.storyboard */; };
 		82298FB51D37432D00222FFC /* usuiiAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82298FB41D37432D00222FFC /* usuiiAppTests.swift */; };
 		82298FC01D37432D00222FFC /* usuiiAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82298FBF1D37432D00222FFC /* usuiiAppUITests.swift */; };
-		82F7FB751D45AC5000A41460 /* DoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F7FB741D45AC5000A41460 /* DoneViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +53,6 @@
 		82298FBB1D37432D00222FFC /* usuiiAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = usuiiAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82298FBF1D37432D00222FFC /* usuiiAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usuiiAppUITests.swift; sourceTree = "<group>"; };
 		82298FC11D37432D00222FFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		82F7FB741D45AC5000A41460 /* DoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoneViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +106,6 @@
 				82298F9F1D37432D00222FFC /* AppDelegate.swift */,
 				82298FA11D37432D00222FFC /* ViewController.swift */,
 				82298FA31D37432D00222FFC /* Main.storyboard */,
-				82F7FB741D45AC5000A41460 /* DoneViewController.swift */,
 				82298FA61D37432D00222FFC /* Assets.xcassets */,
 				82298FA81D37432D00222FFC /* LaunchScreen.storyboard */,
 				82298FAB1D37432D00222FFC /* Info.plist */,
@@ -273,7 +270,6 @@
 				82298FA21D37432D00222FFC /* ViewController.swift in Sources */,
 				8216891B1D3B3A0200D3AF6C /* MorningViewController.swift in Sources */,
 				8216891F1D3B506600D3AF6C /* NightViewController.swift in Sources */,
-				82F7FB751D45AC5000A41460 /* DoneViewController.swift in Sources */,
 				82298FA01D37432D00222FFC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

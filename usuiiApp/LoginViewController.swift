@@ -15,13 +15,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
     }
     
-    // テキストフィールドに名前
     @IBOutlet weak var textfield: UITextField!
     
     func login() {
         // テキストフィールドからFitbitIDを取得
         let fitbitid = textfield.text
-        print("fitbitid")
+        print(fitbitid)
         let userDefaults = NSUserDefaults.standardUserDefaults()
         userDefaults.setObject(fitbitid, forKey: "fitbitid")
         userDefaults.synchronize()
@@ -33,7 +32,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     override func viewDidLoad() {
-        // Do any additional setup after loading the view, typically from a nib.
         super.viewDidLoad()
         textfield.delegate = self
     }
@@ -54,7 +52,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     override func didReceiveMemoryWarning() {
-        // Dispose of any resources that can be recreated.
         super.didReceiveMemoryWarning()
     }
     

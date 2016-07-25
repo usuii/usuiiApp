@@ -33,10 +33,10 @@ class MorningViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
     
     func morning(num: Int) {
+        // パラメータを指定
         let userDefaults = NSUserDefaults.standardUserDefaults()
         let fitbitid = userDefaults.objectForKey("fitbitid")
         print(fitbitid)
@@ -53,6 +53,7 @@ class MorningViewController: UIViewController {
         let morning = ("fitbitid=\(fitbitid)&date=\(date)&time=morning&point=\(num).dataUsingEncoding").dataUsingEncoding(NSUTF8StringEncoding)!
         print(morning)
         
+        // HTTP通信
         let url = NSURL(string:"http://133.27.171.211/~usuii/fitbit/moodData.php")
         print(url)
         let request = NSMutableURLRequest(URL: url!)
@@ -64,13 +65,13 @@ class MorningViewController: UIViewController {
         // let strData = NSString(data: data!, encoding: NSUTF8StringEncoding)
         // print(strData)
         
+        // 画面遷移
         let doneView: AnyObject = self.storyboard!.instantiateViewControllerWithIdentifier("done")
         self.presentViewController(doneView as! UIViewController, animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 }
